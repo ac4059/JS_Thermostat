@@ -1,23 +1,32 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="thermostat.css">
-    <title>Thermostat</title>
-  </head>
-  <body>
-    <section>
-      <h1 id="temperature"></h1>
-      <p>
-        <button id="temperature-up">+</button>
-        <button id="temperature-down">-</button>
-        <button id="temperature-reset">reset</button>
-        power saving mode is <span id="power-saving-status">on</span>
-        <button id="powersaving-on">PSM on</button>
-        <button id="powersaving-off">PSM off</button>
-      </p>
-    </section>
-    <script src="src/thermostat.js"></script>
-    <script src="interface.js"></script>
-  </body>
+    <head>
+      <meta charset="utf-8">
+      <title>Thermostat</title>
+    </head>
+
+    <body>
+
+      <center>
+      <script src="jquery.js"></script>
+      <script src='src/Thermostat.js'></script>
+      <script src='src/interface.js'></script>
+      <div>
+        <h1 id='showTemperature' ></h1>
+        <button class='temp_control' id='increase'>+</button>
+        <button class='temp_control' id='decrease'>-</button>
+        <h4> POWER SAVING MODE: <span id='Power-Saving-Mode'></span></h4>
+        <button class='psm' id='psm_on'>ON</button>
+        <button class='psm' id='psm_off'>OFF</button>
+        <button class='reset' id='reset'>Reset</button>
+        <p>Current City: </p>
+        <select id='City'>
+          <option value='London'>London</option>
+          <option value='Tokyo'>Tokyo</option>
+          <option value='New_York'>New York</option>
+          <option value='Lima' id='Lima'>Lima</option>
+        </select>
+      </div>
+    </body>
+  </center>
+
 </html>
